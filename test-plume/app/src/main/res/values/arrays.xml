@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resource_types_array">
+        <item>Вода</item>
+        <item>Корм</item>
+        <item>Удобрение</item>
+        <item>Средство защиты</item>
+        <item>Техника</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>л</item>
+        <item>кг</item>
+        <item>шт</item>
+        <item>мл</item>
+        <item>г</item>
+    </string-array>
+</resources>
