@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.example.androidfarmmonitor'
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.example.androidfarmmonitor"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs = ['src/main/java']
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    // Removed Google Maps and Mapbox dependencies
+    // implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    // implementation 'com.mapbox.maps:android:10.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // osmdroid dependency for OpenStreetMap
+    implementation 'org.osmdroid:osmdroid-android:6.1.14'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
