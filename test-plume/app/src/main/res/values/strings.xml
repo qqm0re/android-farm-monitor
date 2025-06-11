@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidFarmMonitor</string>
+    <string name="auto_consume_period_unit_day">День</string>
+    <string name="auto_consume_period_unit_week">Неделя</string>
+    <string name="auto_consume_period_unit_month">Месяц</string>
+    <string name="auto_consume_period_unit_year">Год</string>
+    <string-array name="auto_consume_period_units">
+        <item>@string/auto_consume_period_unit_day</item>
+        <item>@string/auto_consume_period_unit_week</item>
+        <item>@string/auto_consume_period_unit_month</item>
+        <item>@string/auto_consume_period_unit_year</item>
+    </string-array>
+</resources>
