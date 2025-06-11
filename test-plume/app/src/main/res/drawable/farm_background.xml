@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Градиентный фон -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E8F5E9"
+                android:centerColor="#C8E6C9"
+                android:endColor="#A5D6A7"
+                android:angle="135"/>
+        </shape>
+    </item>
+    
+    <!-- Паттерн сельскохозяйственных элементов -->
+    <item>
+        <bitmap
+            android:src="@drawable/pattern_dots"
+            android:tileMode="repeat"
+            android:alpha="0.05"/>
+    </item>
+</layer-list>
